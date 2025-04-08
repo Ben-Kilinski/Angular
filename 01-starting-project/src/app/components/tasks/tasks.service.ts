@@ -24,8 +24,7 @@ export class TasksService {
             id: 't3',
             userId: 'u3',
             title: 'Prepare issue template',
-            summary:
-                'Prepare and describe an issue template which will help with project management',
+            summary:'Prepare and describe an issue template which will help with project management',
             dueDate: '2024-06-15',
         },
     ]
