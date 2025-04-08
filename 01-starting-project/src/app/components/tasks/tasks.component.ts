@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { TaskComponent } from "../task/task.component";
 import { NewTaskComponent } from "./new-task/new-task.component";
 import { type NewTaskData } from '../task/task.model';
-import { SharedComponent } from "../shared/shared.component";
+import { SharedComponent } from "../task/shared/shared.component";
 import { TasksService } from './tasks.service';
 
 @Component({

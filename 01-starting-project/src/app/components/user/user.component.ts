@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { type User } from './user.model';
-import { SharedComponent } from "../shared/shared.component";
+import { SharedComponent } from "../task/shared/shared.component";
 
 @Component({
   selector: 'app-user',
@@ -11,10 +11,10 @@ import { SharedComponent } from "../shared/shared.component";
 })
 export class UserComponent {
   @Input() user!: User;
-  @Input({required: true}) selected!: boolean;
-  @Output() select = new EventEmitter<string>(); 
+  @Input({ required: true }) selected!: boolean;
+  @Output() select = new EventEmitter<string>();
 
-  get imagePath() {	
+  get imagePath() {
     return 'assets/users/' + this.user.avatar;
   }
 
