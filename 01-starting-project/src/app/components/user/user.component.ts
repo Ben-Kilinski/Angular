@@ -1,10 +1,11 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { type User } from './user.model';
+import { SharedComponent } from "../shared/shared.component";
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [],
+  imports: [SharedComponent],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
